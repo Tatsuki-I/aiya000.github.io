@@ -292,12 +292,17 @@ helloTo x  <span class="co">-- 仮引数部に名前（変数、具体的な値�
 <p>ことり「最後に直和型。　今回はこれで最後だから頑張って☆」<br />
 穂乃果「うん！　ファイトだよっ！」</p>
 <p>ことり「直和型は、列挙型と直積型が合わさったようなもので、列挙子がフィールドを持ちます！」</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Student</span> <span class="fu">=</span> <span class="dt">OtonokiStudent</span> <span class="dt">String</span> <span class="dt">Int</span>
+             <span class="fu">|</span> <span class="dt">UranohoshiStudent</span> <span class="dt">String</span> <span class="dt">Int</span> <span class="dt">Bool</span>
+  <span class="kw">deriving</span> (<span class="dt">Show</span>)</code></pre></div>
+<p>ことり「もちろんレコードも使えるよ」</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- 直和型</span>
 <span class="kw">data</span> <span class="dt">Student</span> <span class="fu">=</span> <span class="dt">OtonokiStudent</span> {<span class="ot"> otonokiName ::</span> <span class="dt">String</span>,<span class="ot"> otonokiAge ::</span> <span class="dt">Int</span> }
              <span class="fu">|</span> <span class="dt">UranohoshiStudent</span> {<span class="ot"> uranohoshiName ::</span> <span class="dt">String</span>,<span class="ot"> uranohoshiAge ::</span> <span class="dt">Int</span>,<span class="ot"> likeMikan ::</span> <span class="dt">Bool</span> }
-  <span class="kw">deriving</span> (<span class="dt">Show</span>)
-
-<span class="ot">prettyPrintStudent ::</span> <span class="dt">Student</span> <span class="ot">-&gt;</span> <span class="dt">IO</span> ()
+  <span class="kw">deriving</span> (<span class="dt">Show</span>)</code></pre></div>
+<p>ことり「今回のコード例はこちら」<br />
+ことり「名前空間がバッティングするので、<code>OtonokiStudent</code>と<code>UranohoshiStudent</code>のレコード名は固有のものにしてあるよ」</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">prettyPrintStudent ::</span> <span class="dt">Student</span> <span class="ot">-&gt;</span> <span class="dt">IO</span> ()
 prettyPrintStudent (<span class="dt">OtonokiStudent</span> herName herAge) <span class="fu">=</span> <span class="kw">do</span>
   putStrLn <span class="st">&quot;音ノ木坂学院生徒&quot;</span>
   putStrLn (<span class="st">&quot;name: &quot;</span> <span class="fu">++</span> herName)
@@ -310,8 +315,8 @@ prettyPrintStudent (<span class="dt">UranohoshiStudent</span> herName herAge she
 
 <span class="ot">main ::</span> <span class="dt">IO</span> ()
 main <span class="fu">=</span> <span class="kw">do</span>
-  <span class="kw">let</span> umi     <span class="fu">=</span> <span class="dt">OtonokiStudent</span> <span class="st">&quot;園田海未&quot;</span> <span class="dv">16</span>
-      yoshiko <span class="fu">=</span> <span class="dt">UranohoshiStudent</span> <span class="st">&quot;ヨハネ&quot;</span> <span class="dv">15</span> <span class="dt">False</span>
+  <span class="kw">let</span> umi     <span class="fu">=</span> <span class="dt">OtonokiStudent</span> <span class="st">&quot;園田海未&quot;</span> <span class="dv">16</span>         <span class="co">--</span>
+      yoshiko <span class="fu">=</span> <span class="dt">UranohoshiStudent</span> <span class="st">&quot;ヨハネ&quot;</span> <span class="dv">15</span> <span class="dt">False</span>  <span class="co">-- do式内のletブロックは、複数の名前を定義できるよ</span>
   prettyPrintStudent umi
   prettyPrintStudent yoshiko
 
@@ -323,11 +328,6 @@ main <span class="fu">=</span> <span class="kw">do</span>
 <span class="co">-- name: ヨハネ</span>
 <span class="co">-- age: 15</span>
 <span class="co">-- みかんのこと好き？: False</span></code></pre></div>
-<p>ことり「名前空間がバッティングするので、<code>OtonokiStudent</code>と<code>UranohoshiStudent</code>のレコード名は固有のものにしてあるよ」<br />
-ことり「もちろんレコードなくても書けます」</p>
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Student</span> <span class="fu">=</span> <span class="dt">OtonokiStudent</span> <span class="dt">String</span> <span class="dt">Int</span>
-             <span class="fu">|</span> <span class="dt">UranohoshiStudent</span> <span class="dt">String</span> <span class="dt">Int</span> <span class="dt">Bool</span>
-  <span class="kw">deriving</span> (<span class="dt">Show</span>)</code></pre></div>
 <p>穂乃果「えーっ！　これは……Javaで書くとどうなるんだろう……」<br />
 ことり「これはね、ScalaとかKotlinでも使う書き方があって、それで表現できるんだけど……ちょっとJavaだと可読性が悪くなるんだぁ」<br />
 ことり「ちょっとコードが長くなるよ……注意してね」</p>
