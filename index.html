@@ -1,21 +1,45 @@
----
-title: Home
----
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>あいや☆ぱぶりっしゅぶろぐ！ - Home</title>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/default.css" />
+        <link rel="stylesheet" type="text/css" href="./css/highlight.css" />
+        <!-- bootstrap requires jquery -->
+        <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./">あいや☆ぱぶりっしゅぶろぐ！</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="./">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./archive.html">Archive</a></li>
+            </ul>
+        </nav>
 
+        <div id="content">
+            <h4>Home</h4>
+            <link rel="stylesheet" type="text/css" href="./css/index.css" />
 
 <div class="blog-title">
     <div class="blog-title-internal">
         <h1>
-            <img class="icon-of-me" src="/images/me.png" alt="icon-of-me"/> ＜{あいや☆ぱぶりっしゅぶろぐ！}
+            <img class="icon-of-me" src="./images/me.png" alt="icon-of-me" /> ＜{あいや☆ぱぶりっしゅぶろぐ！}
         </h1>
     </div>
 </div>
 
 <div class="home-content">
     <div class="screen-left">
-        <img class="wani-san" src="/images/wani-san.png" alt="wani-san-image"/>
+        <img class="wani-san" src="./images/wani-san.png" alt="wani-san-image" />
         <div class="tagcloud">
-            $tagcloud$
+            <a style="font-size: 97%" href="./tags/AdventCalendar.html">AdventCalendar</a> <a style="font-size: 80%" href="./tags/Android.html">Android</a> <a style="font-size: 182%" href="./tags/Haskell.html">Haskell</a> <a style="font-size: 80%" href="./tags/JavaScript.html">JavaScript</a> <a style="font-size: 154%" href="./tags/Linux.html">Linux</a> <a style="font-size: 80%" href="./tags/NeoVim.html">NeoVim</a> <a style="font-size: 91%" href="./tags/Node.js.html">Node.js</a> <a style="font-size: 85%" href="./tags/RasberryPi.html">RasberryPi</a> <a style="font-size: 85%" href="./tags/Shell.html">Shell</a> <a style="font-size: 80%" href="./tags/TypeScript.html">TypeScript</a> <a style="font-size: 97%" href="./tags/Vim.html">Vim</a> <a style="font-size: 80%" href="./tags/git.html">git</a> <a style="font-size: 80%" href="./tags/shell.html">shell</a> <a style="font-size: 91%" href="./tags/%E3%81%93%E3%81%A8%E3%82%8A%E3%80%81%E7%A9%82%E4%B9%83%E6%9E%9C%E3%81%A8%E4%B8%80%E7%B7%92%E3%81%AB%E5%AD%A6%E3%81%B6Haskell.html">ことり、穂乃果と一緒に学ぶHaskell</a> <a style="font-size: 114%" href="./tags/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88.html">イベント</a> <a style="font-size: 85%" href="./tags/%E3%82%B2%E3%83%BC%E3%83%A0.html">ゲーム</a> <a style="font-size: 114%" href="./tags/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0.html">プログラミング</a> <a style="font-size: 80%" href="./tags/%E3%83%9D%E3%82%A8%E3%83%A0.html">ポエム</a> <a style="font-size: 91%" href="./tags/%E3%83%A9%E3%83%96%E3%83%A9%E3%82%A4%E3%83%96%EF%BC%81%E3%81%A7%E5%AD%A6%E3%81%B6.html">ラブライブ！で学ぶ</a> <a style="font-size: 80%" href="./tags/%E5%81%A5%E5%BA%B7.html">健康</a> <a style="font-size: 91%" href="./tags/%E5%82%99%E8%80%83%E9%8C%B2.html">備考録</a> <a style="font-size: 194%" href="./tags/%E6%97%A5%E8%A8%98.html">日記</a> <a style="font-size: 137%" href="./tags/%E7%92%B0%E5%A2%83.html">環境</a>
         </div>
         <div class="twitter-widget">
             <a class="twitter-timeline" data-width="300" data-height="381" data-link-color="#E95F28" href="https://twitter.com/public_ai000ya">Tweets by public_ai000ya</a>
@@ -27,14 +51,223 @@ title: Home
     </div>
 
     <div class="screen-right">
-        $partial("pickup-post.html")$
+        <link rel="stylesheet" type="text/css" href="./css/pickup-post.css" />
+
+<div class="pickup-post">
+    <span class="label label-info">Pick up</span>
+    <a href="http://qiita.com/aiya000/items/f6e7103c99066707f3cf">
+        「GenerarizedNewTypeDerivingで自分用Monadを作る」ってなに！？（具体例編） - Qiita
+    </a>
+</div>
+
         <h2>記事</h2>
-        $partial("templates/post-list.html")$
-        <a href="/archive.html">これ以前の記事</a>
+        <ul>
+    
+        <li>
+            2017/05/12 - <a href="./posts/2017-05-12-learn-haskell-with-muse.html">ことり、穂乃果と一緒に学ぶHaskell（入門）その3「代数的データ型の定義2」</a>
+        </li>
+    
+        <li>
+            2017/05/11 - <a href="./posts/2017-05-11-learn-haskell-with-muse.html">ことり、穂乃果と一緒に学ぶHaskell（入門）その2「関数とデータ型」</a>
+        </li>
+    
+        <li>
+            2017/05/06 - <a href="./posts/2017-05-06-learn-haskell-with-muse.html">ことり、穂乃果と一緒に学ぶHaskell（入門）その1「代数的データ型の定義」</a>
+        </li>
+    
+        <li>
+            2017/04/22 - <a href="./posts/2017-04-22-my-power-of-haskell.html">とれたてHaskellまるごと１日分の入ったHaskellプロジェクトがこれです</a>
+        </li>
+    
+        <li>
+            2017/04/12 - <a href="./posts/2017-04-12-how-to-fix-libncurses-problem-of-stack.html">haskell-stackでcan't load .so/.DLL for 〜/libncurses.soが出た場合の対処</a>
+        </li>
+    
+        <li>
+            2017/04/09 - <a href="./posts/2017-04-09-techbookfest2.html">技術書展2に行ってきた！ めっちゃ楽しかった！</a>
+        </li>
+    
+        <li>
+            2017/04/08 - <a href="./posts/2017-04-08-why-rank-2-existential-quantification.html">単相化された存在型のランク2での謎</a>
+        </li>
+    
+        <li>
+            2017/03/02 - <a href="./posts/2017-03-02-doogee_x5_max_pro_sugoi.html">DOOGEE X5 Max Proがコスパ最強で最高の端末</a>
+        </li>
+    
+        <li>
+            2017/02/18 - <a href="./posts/2017-02-18-how-to-use-afu-as-vicmd.html">bindkey -vしてた人向けのauto-fu.zsh導入方法</a>
+        </li>
+    
+        <li>
+            2017/02/11 - <a href="./posts/2017-02-11-derive_isstring.html">Text(ByteString)をnewtypeした型でもOverloadedStringsできるよ。</a>
+        </li>
+    
+        <li>
+            2017/02/03 - <a href="./posts/2017-02-03-how-to-install-yi.html">yiテキストエディタのインストール方法</a>
+        </li>
+    
+        <li>
+            2017/01/31 - <a href="./posts/2017-01-31-data-char-isAlpha-is-risky.html">Data.CharのisAlphaはマルチバイト文字を正しく扱えない</a>
+        </li>
+    
+        <li>
+            2017/01/26 - <a href="./posts/2017-01-26-fix_arch_dependency.html">xf86-input-wacomをインストールしたら依存関係ダメだったから直した</a>
+        </li>
+    
+        <li>
+            2017/01/20 - <a href="./posts/2017-01-20-products_at_2016.html">2016年につくったやつ一覧 :D</a>
+        </li>
+    
+        <li>
+            2016/12/30 - <a href="./posts/2016-12-30-study_camp_with_nico_lang.html">矢澤にこ言語が完成（※）しました</a>
+        </li>
+    
+        <li>
+            2016/12/25 - <a href="./posts/2016-12-25-My_parents_presents_HHKB_Lite2_JP_to_me.html">HHKB Lite2 JP配列のクリスマスプレゼントを貰った</a>
+        </li>
+    
+        <li>
+            2016/12/21 - <a href="./posts/2016-12-21-first_meeting_of_school_idol_festival_ac.html">ラブライブ！ スクフェスACをやってきた！ with 穂乃果ちゃん</a>
+        </li>
+    
+        <li>
+            2016/12/19 - <a href="./posts/2016-12-19-megurovim.html">meguro.vimに参加してきました</a>
+        </li>
+    
+        <li>
+            2016/12/17 - <a href="./posts/2016-12-17-vim_as_vm_on_neovim.html">使いたいVimプラグインがNeoVimで対応してない？ NeoVimは環境、VimはVMだよ？</a>
+        </li>
+    
+        <li>
+            2016/12/13 - <a href="./posts/2016-12-13-intro-vim-aref-web-vim_advent_calendar_2016.html">aref-web.vimの紹介 - Vimアドベントカレンダー2016 - 14日目</a>
+        </li>
+    
+        <li>
+            2016/12/09 - <a href="./posts/2016-12-09-pronama_advent_calendar_2016_git-commit-cases.html">gitでcommitを1つに統合すべき場合 及び 1つのcommitを分解すべき場合 - プロ生アドベントカレンダー2016 - 9日目</a>
+        </li>
+    
+        <li>
+            2016/12/02 - <a href="./posts/2016-12-02-yi_types-haskell_advent_calendar_2016.html">Yiが定義する型の紹介 - Haskell Advent Calendar 2016 - 4日目</a>
+        </li>
+    
+        <li>
+            2016/11/23 - <a href="./posts/2016-11-23-pronama_advent_calendar_2016.html">PullRequestをしよう！ - プロ生アドベントカレンダー2016 - 1日目</a>
+        </li>
+    
+        <li>
+            2016/11/15 - <a href="./posts/2016-11-15-stack-haddock_problem_at_japanese.html">日本語環境のLANGでstack haddockができないやつの解決</a>
+        </li>
+    
+        <li>
+            2016/11/07 - <a href="./posts/2016-11-07-vimconf2016.html">VimConf2016にLT枠で参加してきたよ！ (通信容量多めなのでケータイ回線等の閲覧注意)</a>
+        </li>
+    
+        <li>
+            2016/11/04 - <a href="./posts/2016-11-04-cmdargs_kill_me_when.html">cmdargsはargsと同時にhelpを設定するとシぬ</a>
+        </li>
+    
+        <li>
+            2016/10/29 - <a href="./posts/2016-10-29-joined_yokohamavim.html">Yokohama.vim#8に行ってきた</a>
+        </li>
+    
+        <li>
+            2016/10/14 - <a href="./posts/2016-10-14-watched_the_movie-your_name.html">君の名は。を観てきた（ネタバレはありません）</a>
+        </li>
+    
+        <li>
+            2016/10/02 - <a href="./posts/2016-10-02-arch_packages_of_this_week.html">今週Archに入れたパッケージ</a>
+        </li>
+    
+        <li>
+            2016/10/01 - <a href="./posts/2016-10-01-awesome_mplus_with_liftM2.html">Haskellのmplusってもしかしてすごい便利じゃない？</a>
+        </li>
+    
+</ul>
+
+        <a href="./archive.html">これ以前の記事</a>
     </div>
 </div>
 
-<br class="clear-styles"/>
-<hr class="short-bar"/>
+<br class="clear-styles" />
+<hr class="short-bar" />
 
-$partial("affiliate.html")$
+<link rel="stylesheet" type="text/css" href="./css/affiliate.css" />
+
+<!-- How to add the item
+    1. Open https://affiliate.amazon.co.jp/home and login to there
+    2. Search something
+    3. Click 「▼」 button that is put the right of 「リンクを作成」
+    4. Click 「HTMLで取得する場合はこちら」 button
+    5. Copy the html code
+    6. Add it with item name to li
+-->
+
+<h3>あいやが最近買って良かったもの</h3>
+
+<ul class="affiliate">
+    <li>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=aiya00003-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=B01N9SHVRJ&linkId=48cb107a881362bcfa5e39a734ff34e1&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"></iframe>
+    </li>
+
+    <li>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=aiya00003-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=B00DED8FI4&linkId=af967bf1a9a45b3a10c21434b4648a55&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"></iframe>
+    </li>
+
+    <li>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=aiya00003-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=B00VWCBDLU&linkId=447d741a921754f99c51cdb0c0b29c7a&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"></iframe>
+    </li>
+
+    <li>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=aiya00003-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=B01NCA4FBB&linkId=d850caa10114c9e5a664ae2c81303cf1&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"></iframe>
+    </li>
+
+    <li>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=aiya00003-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=B000KUHFGM&linkId=e794cb0ff444808ad1ba8714acf12996&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"></iframe>
+    </li>
+
+    <li>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=aiya00003-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=B016U4C2OQ&linkId=813f1c599fe81f56f6b6f51fca538d6d&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"></iframe>
+    </li>
+
+    <li>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=aiya00003-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=B00Y05BQ9A&linkId=2d0dd8dd406407e14af7fcf43986ceec&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"></iframe>
+    </li>
+
+    <li>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=aiya00003-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=B00B59AEF6&linkId=97d3d93aaf6384faa64fe5e22fbdac87&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"></iframe>
+    </li>
+
+    <li>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=aiya00003-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=B0071N61JS&linkId=f55dd114a44202ae3f3867f811f5ab37&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"></iframe>
+    </li>
+
+    <li>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=aiya00003-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=B00FYHEHK8&linkId=9af276948421c96fccbee036981aa999&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"></iframe>
+    </li>
+
+    <li>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=aiya00003-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=4621063243&linkId=b70f8d7ad4d071ce14ff13c76503508f&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"></iframe>
+    </li>
+
+    <li>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=aiya00003-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=4535787204&linkId=f185beaa91cbad96d16cd6221257f795&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"></iframe>
+    </li>
+
+    <li>
+        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=qf_sp_asin_til&t=aiya00003-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=4873115655&linkId=f1afde2362e2fd5d66144657b2c0ac41&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"></iframe>
+    </li>
+</ul>
+
+<br class="clear-styles" />
+
+
+
+        </div>
+
+        <div id="footer">
+            (*^o^) { This blog powerd by Haskell <a href="http://jaspervdj.be/hakyll">Hakyll</a> <br />
+            and Uses <a href="http://nkmr6194.github.io/Umi/">Umi</a>
+        </div>
+    </body>
+</html>
