@@ -183,17 +183,12 @@ main <span class="fu">=</span> <span class="kw">do</span>
 ことり「そんな感じだね、ありがとう♪　これをHaskellに直すとこうなるよ」</p>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
 main <span class="fu">=</span> <span class="kw">do</span>
-  <span class="kw">let</span> kotori <span class="fu">=</span> <span class="dt">Member</span> <span class="st">&quot;kotori&quot;</span> <span class="dv">16</span>
+  <span class="kw">let</span> kotori <span class="fu">=</span> <span class="dt">Member</span> <span class="st">&quot;南ことり&quot;</span> <span class="dv">16</span>
   return ()</code></pre></div>
 <p>穂乃果「<code>let</code>？　<code>return ()</code>？」<br />
 ことり「<code>let</code>は変数の定義に使うキーワードだよ！　Haskellだと、変数名の前に型名を書かなくてもいいの！」<br />
 ことり「<code>return ()</code>は……今は単なるno operationだと思っておいて欲しいな☆」<br />
 穂乃果「no operationは、何もしない命令だったよね。　わかりましたっ！」</p>
-<p>穂乃果「ってあれ、“kotori”？　“南ことり”じゃだめなの？」<br />
-ことり「うっ、穂乃果ちゃんするどいね……実はHaskell、そのままじゃ日本語を扱うときに色々と不安定なんだ。 　表示できたりできなかったり……シンプルに表示するくらいはできるんだけど ……<code>String</code>で直接マルチバイト文字列を使わない方がいいんだ」</p>
-<p>ことり「ある型を使えば問題ないんだけど、今回の内容とは外れちゃうから、これも今は無視してくれる……かな」<br />
-穂乃果「ある型？　はーい」</p>
-<p>ことり（今回はごく基本に絞ってるから無視してほしいものが多くって、困っちゃうなー……）ｳｰ</p>
 <h2 id="型クラスの自動導出">型クラスの自動導出</h2>
 <p>ことり「次は、Memberデータ型を<code>main</code>で表示してみるよ」</p>
 <p>ことり「Javaでは、<code>toString()</code>っていうメソッドをオーバーライドすることがあったよね」<br />
